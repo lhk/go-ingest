@@ -1,9 +1,11 @@
 
 name: Build Go binaries
-on:
-  push:
-    branches: [ main ]
-  pull_request:
+
+# commenting this out for now. It's a nice way to build on different platforms, but the release script runs faster and the resulting binaries work for me on Mac
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
 
 jobs:
   build:
