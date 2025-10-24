@@ -1,0 +1,22 @@
+# Ignore Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Ignore build output directories
+/bin/
+/build/
+/dist/
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore temporary files and editor junk
+*.swp
+*.tmp
+*.log
+*.bak
