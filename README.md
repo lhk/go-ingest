@@ -9,16 +9,32 @@ Here I'm piping the output to a file, to not flood the terminal
 `./go-ingest lklein/go-ingest/*.md lklein/go-ingest/*.go > output.txt`
 
 output.txt will look like this
-`cat output.txt | head -20
-
+```
+> cat output.txt
 # Folder structure
 └── lklein
-    ├── cachesaver
-    │   ├── API_proposal.md
-    │   ├── README.md
-    │   └── prompts.md
-    ├── dueling_agents
-    │   └── README.md
-    ├
-    ├── go-ingest
-    │   └── README.md
+    └── go-ingest
+        ├── README.md
+        └── main.go
+
+# lklein/go-ingest/README.md
+## Building
+
+`go build -o go-ingest`
+
+<... README inception :) ...>
+
+
+# lklein/go-ingest/main.go
+package main
+
+import (
+	"flag"
+	"fmt"
+	"os"
+
+<... The go code of this repo ...>
+```
+
+
+
