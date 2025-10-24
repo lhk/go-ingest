@@ -6,9 +6,13 @@ You can also download a build from the tagged releases.
 
 ## Usage
 The executable takes an arbitrary number of file patterns as command line parameters.
-Here I'm piping the output to a file, to not flood the terminal
+Here I'm piping the output to a file, to not flood the terminal:
 
 `./go-ingest lklein/go-ingest/*.md lklein/go-ingest/*.go > output.txt`
+
+On MacOS you can pipe to pbcopy and this fills your clipboard:
+
+`./go-ingest <file pattern> | pbcopy`
 
 output.txt will look like this
 ```
