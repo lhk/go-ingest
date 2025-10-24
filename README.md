@@ -2,6 +2,8 @@
 
 `go build -o go-ingest`
 
+You can also download a build from the tagged releases.
+
 ## Usage
 The executable takes an arbitrary number of file patterns as command line parameters.
 Here I'm piping the output to a file, to not flood the terminal
